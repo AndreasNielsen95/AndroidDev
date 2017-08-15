@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>15-Aug-17 2:51:19 PM</xs:documentation>
+    <xs:documentation>15-08-2017 18:05:11</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -3606,6 +3606,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -3647,6 +3649,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -4254,6 +4258,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -4781,6 +4787,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -5858,6 +5866,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -6149,6 +6159,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -10301,7 +10313,7 @@
   </xs:attribute>
   <xs:attribute name="fillViewport">
     <xs:annotation>
-      <xs:documentation></xs:documentation>
+      <xs:documentation>Defines whether the scrollview should stretch its content to fill the viewport.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
@@ -10386,13 +10398,7 @@
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="@android:integer/config_longAnimTime" />
-            <xs:enumeration value="@android:integer/config_mediumAnimTime" />
-            <xs:enumeration value="@android:integer/config_shortAnimTime" />
-            <xs:enumeration value="@android:integer/status_bar_notification_info_maxnum" />
-            <xs:enumeration value="?android:attr/windowTransitionBackgroundFadeDuration" />
-          </xs:restriction>
+          <xs:restriction base="xs:string" />
         </xs:simpleType>
       </xs:union>
     </xs:simpleType>
@@ -10856,6 +10862,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -10897,6 +10905,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -11465,6 +11475,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -11506,6 +11518,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -11547,6 +11561,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -16584,6 +16600,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -16721,8 +16739,10 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
-            <xs:enumeration value="@+id/toggleButton1" />
-            <xs:enumeration value="@id/MyButton" />
+            <xs:enumeration value="@+id/checkBox1" />
+            <xs:enumeration value="@id/btn_GetData" />
+            <xs:enumeration value="@id/btn_SaveData" />
+            <xs:enumeration value="@id/tv_Test1" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -17050,6 +17070,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -18267,6 +18289,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -20726,6 +20750,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -20917,13 +20943,15 @@
   </xs:attribute>
   <xs:attribute name="maxDate">
     <xs:annotation>
-      <xs:documentation></xs:documentation>
+      <xs:documentation>The maximal date shown by this calendar view in mm/dd/yyyy format.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -21172,13 +21200,15 @@
   </xs:attribute>
   <xs:attribute name="minDate">
     <xs:annotation>
-      <xs:documentation></xs:documentation>
+      <xs:documentation>The minimal date shown by this calendar view in mm/dd/yyyy format.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -21872,6 +21902,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -23774,6 +23806,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -25696,6 +25730,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -26677,6 +26713,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -30075,6 +30113,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -30676,7 +30716,7 @@
   </xs:attribute>
   <xs:attribute name="splitTrack">
     <xs:annotation>
-      <xs:documentation></xs:documentation>
+      <xs:documentation>Whether to split the track and leave a gap for the thumb drawable.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
@@ -31339,6 +31379,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -31396,7 +31438,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@style/MaterialTheme" />
             <xs:enumeration value="@style/XamarinDesignerCustomAppliedTheme" />
             <xs:enumeration value="@android:style/Animation" />
             <xs:enumeration value="@android:style/Animation.Activity" />
@@ -32513,6 +32554,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -34169,6 +34212,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -34210,6 +34255,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -37308,6 +37355,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -37349,6 +37398,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -38159,7 +38210,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@style/MaterialTheme" />
             <xs:enumeration value="@style/XamarinDesignerCustomAppliedTheme" />
             <xs:enumeration value="@android:style/Animation" />
             <xs:enumeration value="@android:style/Animation.Activity" />
@@ -39035,7 +39085,7 @@
   </xs:attribute>
   <xs:attribute name="thumb">
     <xs:annotation>
-      <xs:documentation></xs:documentation>
+      <xs:documentation>Draws the thumb on a seekbar.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
@@ -39349,7 +39399,7 @@
   </xs:attribute>
   <xs:attribute name="thumbTint">
     <xs:annotation>
-      <xs:documentation></xs:documentation>
+      <xs:documentation>Tint to apply to the button graphic.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
@@ -39440,12 +39490,19 @@
   </xs:attribute>
   <xs:attribute name="thumbTintMode">
     <xs:annotation>
-      <xs:documentation>Blending mode used to apply the thumb tint.</xs:documentation>
+      <xs:documentation>Blending mode used to apply the button graphic tint.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
-          <xs:restriction base="xs:string" />
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="add" />
+            <xs:enumeration value="multiply" />
+            <xs:enumeration value="screen" />
+            <xs:enumeration value="src_atop" />
+            <xs:enumeration value="src_in" />
+            <xs:enumeration value="src_over" />
+          </xs:restriction>
         </xs:simpleType>
       </xs:union>
     </xs:simpleType>
@@ -39474,6 +39531,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -39618,6 +39677,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
@@ -40744,6 +40805,8 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/btn_GetDataTxt" />
+            <xs:enumeration value="@string/btn_SaveDataTxt" />
             <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />

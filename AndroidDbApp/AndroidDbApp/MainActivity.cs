@@ -5,7 +5,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using System.Data.SqlClient;
+
+using SQLitePCL;
+using SQLite;
+using System.IO;
 
 namespace AndroidDbApp
 {
@@ -13,6 +16,8 @@ namespace AndroidDbApp
     public class MainActivity : Activity
     {
         int count = 1;
+
+
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -23,9 +28,35 @@ namespace AndroidDbApp
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            Button saveDataButton = FindViewById<Button>(Resource.Id.btn_SaveData);
+            Button getDataButton = FindViewById<Button>(Resource.Id.btn_GetData);
+            TextView tvText = FindViewById<TextView>(Resource.Id.tv_Test1);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+
+
+            //Database and Table is created
+            DbClass db = new DbClass();
+            db.createDb();
+
+            saveDataButton.Click += delegate 
+            {
+
+            };
+
+            getDataButton.Click += delegate 
+            {
+                //var db = new SQLiteConnection(dbPath);
+
+                ////connect to table
+                //var table = db.Table<Notes>();
+
+                //foreach (var item in table)
+                //{
+                //    Notes newNote2 = new Notes(item.Title, item.Content);
+
+                //    tvText.Text += newNote2 + "\n";
+                //}
+            };
         }
 
     }
