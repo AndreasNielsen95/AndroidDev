@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace AndroidDbApp
 {
-    [Activity(Label = "AndroidDbApp", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Theme = "@android:style/Theme.Material.Light", Label = "Note App", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         int count = 1;
