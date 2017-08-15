@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.Data.SqlClient;
 
 namespace AndroidDbApp
 {
@@ -26,6 +27,7 @@ namespace AndroidDbApp
 
             button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
         }
+
     }
 }
 
