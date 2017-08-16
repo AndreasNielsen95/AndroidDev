@@ -3,5 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>Samsung Nexus</SelectedDevice>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <DefaultDevice>AVD_for_Nexus_7_2012_by_Google</DefaultDevice>
+    <AndroidDesignerPreferredTheme>MaterialTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>
