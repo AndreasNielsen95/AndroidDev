@@ -12,28 +12,30 @@ using Android.Views;
 using Android.Widget;
 
 using SQLitePCL;
+using SQLite;
+using System.IO;
 
 namespace AndroidDbApp
 {
     class DbClass
     {
-        string dbCon = "";
+        //path
+        string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "NoteDb.db3");
 
-        private void DbCreate()
+        public void createDb()
         {
-            //TODO: Create DB
+            //connection
+            var db = new SQLiteConnection(dbPath);
+
+            //setup table
+            db.CreateTable<Notes>();
         }
 
-        private void DbCon()
+        public void insertNote(string noteTitle, string noteContent)
         {
+            var db = new SQLiteConnection(dbPath);
 
-        }
-
-        public bool DBExists()
-        {
-            //TODO: Check if db exists
-
-            return true;
+            db.Insert(noteTitle, noteContent);
         }
     }
 }

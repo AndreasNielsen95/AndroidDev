@@ -4,8 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <Button
-        android:id="@+id/MyButton"
+        android:id="@+id/btn_SaveData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Hello" />
+        android:text="@string/btn_SaveDataTxt" />
+    <Button
+        android:text="@string/btn_GetDataTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_GetData" />
+    <TextView
+        android:text="dummy text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Test1" />
 </LinearLayout>
