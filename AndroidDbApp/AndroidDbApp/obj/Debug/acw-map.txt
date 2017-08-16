@@ -1,3 +1,7 @@
+AndroidDbApp.DataActivity, AndroidDbApp;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.DataActivity
+AndroidDbApp.DataActivity, AndroidDbApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.DataActivity
+AndroidDbApp.DataActivity;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.DataActivity
+androiddbapp.DataActivity;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.DataActivity
 AndroidDbApp.MainActivity, AndroidDbApp;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.MainActivity
 AndroidDbApp.MainActivity, AndroidDbApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.MainActivity
 AndroidDbApp.MainActivity;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.MainActivity

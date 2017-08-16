@@ -5,12 +5,12 @@
     android:layout_height="match_parent">
     <Button
         android:id="@+id/btn_SaveData"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_SaveDataTxt" />
     <Button
         android:text="@string/btn_GetDataTxt"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_GetData" />
     <TextView
@@ -19,4 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_Test1" />
+    <Button
+        android:text="Change Page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ChangeActivity" />
 </LinearLayout>

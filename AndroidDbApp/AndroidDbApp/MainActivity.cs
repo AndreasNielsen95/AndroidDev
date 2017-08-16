@@ -30,6 +30,7 @@ namespace AndroidDbApp
             // and attach an event to it
             Button saveDataButton = FindViewById<Button>(Resource.Id.btn_SaveData);
             Button getDataButton = FindViewById<Button>(Resource.Id.btn_GetData);
+            Button activityChangeButton = FindViewById<Button>(Resource.Id.btn_ChangeActivity);
             TextView tvText = FindViewById<TextView>(Resource.Id.tv_Test1);
 
 
@@ -41,6 +42,11 @@ namespace AndroidDbApp
             saveDataButton.Click += delegate 
             {
 
+            };
+
+            activityChangeButton.Click += delegate
+            {
+                StartActivity(typeof(DataActivity));
             };
 
             getDataButton.Click += delegate 

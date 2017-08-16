@@ -4,7 +4,8 @@
   <uses-sdk android:minSdkVersion="16" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="AndroidDbApp" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+  <application android:label="AndroidDbApp" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="DataActivity" android:name="md5dba74a85dfb64a9b1dbef3abdc8f5a7a.DataActivity" />
     <activity android:icon="@drawable/icon" android:label="Note App" android:theme="@android:style/Theme.Material.Light" android:name="md5dba74a85dfb64a9b1dbef3abdc8f5a7a.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

@@ -45,3 +45,4 @@ C:\Users\thesi\Source\Repos\AndroidDev\AndroidDbApp\AndroidDbApp\obj\Debug\R.cs.
 C:\Users\thesi\Source\Repos\AndroidDev\AndroidDbApp\AndroidDbApp\obj\Debug\uploadflags.txt
 C:\Users\thesi\Source\Repos\AndroidDev\AndroidDbApp\AndroidDbApp\bin\Debug\AndroidDbApp.dll.mdb
 C:\Users\thesi\Source\Repos\AndroidDev\AndroidDbApp\AndroidDbApp\obj\Debug\android\assets\AndroidDbApp.dll.mdb
+C:\Users\HF\Source\Repos\AndroidDev\AndroidDbApp\AndroidDbApp\obj\Debug\res\layout\dataactivitylayout.xml
