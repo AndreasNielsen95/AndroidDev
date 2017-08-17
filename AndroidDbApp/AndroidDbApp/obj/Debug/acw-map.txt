@@ -1,3 +1,7 @@
+AndroidDbApp.AdapterClass, AndroidDbApp;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.AdapterClass
+AndroidDbApp.AdapterClass, AndroidDbApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.AdapterClass
+AndroidDbApp.AdapterClass;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.AdapterClass
+androiddbapp.AdapterClass;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.AdapterClass
 AndroidDbApp.DataActivity, AndroidDbApp;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.DataActivity
 AndroidDbApp.DataActivity, AndroidDbApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.DataActivity
 AndroidDbApp.DataActivity;md5dba74a85dfb64a9b1dbef3abdc8f5a7a.DataActivity

@@ -78,6 +78,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdapterClass.cs" />
     <Compile Include="DataActivity.cs" />
     <Compile Include="DbClass.cs" />
     <Compile Include="MainActivity.cs" />

@@ -21,7 +21,6 @@ namespace AndroidDbApp
     {
         //path
         string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "NoteDb.db3");
-
         public void createDb()
         {
             //connection
@@ -34,8 +33,41 @@ namespace AndroidDbApp
         public void insertNote(string noteTitle, string noteContent)
         {
             var db = new SQLiteConnection(dbPath);
+            try
+            {
+                Notes note = new Notes(noteTitle, noteContent);
 
-            db.Insert(noteTitle, noteContent);
+                db.Insert(note);
+            }
+            catch (SQLiteException ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        public string getData()
+        {
+            var db = new SQLiteConnection(dbPath);
+
+            //connect to table
+            var table = db.Table<Notes>();
+
+            string stringToReturn = "";
+
+            foreach (var item in table)
+            {
+                Notes newNote2 = new Notes(item.Title, item.Content);
+
+                stringToReturn += newNote2 + "\n";
+            }
+
+            return stringToReturn;
+        }
+
+        public string getDbPath()
+        {
+            return dbPath;
         }
     }
 }

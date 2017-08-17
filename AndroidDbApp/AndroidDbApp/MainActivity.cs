@@ -32,6 +32,8 @@ namespace AndroidDbApp
             Button getDataButton = FindViewById<Button>(Resource.Id.btn_GetData);
             Button activityChangeButton = FindViewById<Button>(Resource.Id.btn_ChangeActivity);
             TextView tvText = FindViewById<TextView>(Resource.Id.tv_Test1);
+            EditText noteTitle = FindViewById<EditText>(Resource.Id.tb_NoteTitle);
+            EditText noteContent = FindViewById<EditText>(Resource.Id.tb_NoteContent);
 
 
 
@@ -41,7 +43,14 @@ namespace AndroidDbApp
 
             saveDataButton.Click += delegate 
             {
-
+                if (noteTitle.Text == string.Empty && noteContent.Text == string.Empty)
+                {
+                    Toast.MakeText(this, "Fill both boxes to continue", ToastLength.Short).Show();
+                }
+                else
+                {
+                    db.insertNote(noteTitle.Text, noteContent.Text);
+                }
             };
 
             activityChangeButton.Click += delegate
@@ -51,17 +60,7 @@ namespace AndroidDbApp
 
             getDataButton.Click += delegate 
             {
-                //var db = new SQLiteConnection(dbPath);
-
-                ////connect to table
-                //var table = db.Table<Notes>();
-
-                //foreach (var item in table)
-                //{
-                //    Notes newNote2 = new Notes(item.Title, item.Content);
-
-                //    tvText.Text += newNote2 + "\n";
-                //}
+                tvText.Text += db.getData();
             };
         }
 

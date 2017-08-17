@@ -32,7 +32,7 @@ namespace AndroidDbApp
         {
             return Title + " " + Content;
         }
-        
+
 
 
     }
