@@ -28,12 +28,6 @@ namespace AndroidDbApp
 
         }
 
-        public override string ToString()
-        {
-            return Title + " " + Content;
-        }
-
-
-
+        public override string ToString() => Title + " " + Content;
     }
 }

@@ -50,18 +50,9 @@ namespace AndroidDbApp
 
             if (view == null)
             {
-                view = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleExpandableListItem1, null);
+                    view = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleListItem1, null);
             }
-            try
-            {
-                view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = myNotes[position].ToString();
-            }
-            catch (Exception ex)
-            {
-                
-                Toast.MakeText(context, ex.ToString(), ToastLength.Long).Show() ;
-            }
-
+            view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = myNotes[position].ToString();
             return view;
         }
     }

@@ -17,7 +17,7 @@ namespace AndroidDbApp
     [Activity(Label = "DataActivity")]
     public class DataActivity : Activity
     {
-        string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "NoteDb.db3");
+        private readonly string _dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "NoteDb.db3");
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,21 +30,23 @@ namespace AndroidDbApp
             try
             {
                 //views
-                var db = new SQLiteConnection(dbPath);
+                var db = new SQLiteConnection(_dbPath);
 
-                Notes[] myNotes = new Notes[30];
+                Notes myNotes = new Notes();
 
                 var table = db.Table<Notes>();
+                var data = new List<string>();
 
-                int count = 0;
+                //int count = 0;
 
                 foreach (var item in table)
                 {
-                    myNotes[count] = item;
-                    count++;
+                    //myNotes[count] = item;
+                    //count++;
+                    data.Add("Title: " + item.Title + "   -   " + "Content: " + item.Content);
                 }
                 var lv = FindViewById<ListView>(Resource.Id.lv_DatabaseView);
-                lv.Adapter = new AdapterClass(this, myNotes);
+                lv.Adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleSelectableListItem, data.ToArray());
             }
             catch (Exception ex)
             {

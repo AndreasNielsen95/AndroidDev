@@ -15,9 +15,6 @@ namespace AndroidDbApp
     [Activity(Theme = "@android:style/Theme.Material.Light", Label = "Note App", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        int count = 1;
-
-
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -35,11 +32,9 @@ namespace AndroidDbApp
             EditText noteTitle = FindViewById<EditText>(Resource.Id.tb_NoteTitle);
             EditText noteContent = FindViewById<EditText>(Resource.Id.tb_NoteContent);
 
-
-
             //Database and Table is created
             DbClass db = new DbClass();
-            db.createDb();
+            db.CreateDb();
 
             saveDataButton.Click += delegate 
             {
@@ -49,7 +44,7 @@ namespace AndroidDbApp
                 }
                 else
                 {
-                    db.insertNote(noteTitle.Text, noteContent.Text);
+                    db.InsertNote(noteTitle.Text, noteContent.Text);
                 }
             };
 
@@ -58,9 +53,11 @@ namespace AndroidDbApp
                 StartActivity(typeof(DataActivity));
             };
 
-            getDataButton.Click += delegate 
+            getDataButton.Click += delegate
             {
-                tvText.Text += db.getData();
+                tvText.Text = string.Empty;
+                tvText.Text += db.GetData();
+                //db.DeleteTable();
             };
         }
 

@@ -20,19 +20,20 @@ namespace AndroidDbApp
     class DbClass
     {
         //path
-        string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "NoteDb.db3");
-        public void createDb()
+        private readonly string _dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "NoteDb.db3");
+
+        public void CreateDb()
         {
             //connection
-            var db = new SQLiteConnection(dbPath);
+            var db = new SQLiteConnection(_dbPath);
 
             //setup table
             db.CreateTable<Notes>();
         }
 
-        public void insertNote(string noteTitle, string noteContent)
+        public void InsertNote(string noteTitle, string noteContent)
         {
-            var db = new SQLiteConnection(dbPath);
+            var db = new SQLiteConnection(_dbPath);
             try
             {
                 Notes note = new Notes(noteTitle, noteContent);
@@ -46,9 +47,9 @@ namespace AndroidDbApp
 
         }
 
-        public string getData()
+        public string GetData()
         {
-            var db = new SQLiteConnection(dbPath);
+            var db = new SQLiteConnection(_dbPath);
 
             //connect to table
             var table = db.Table<Notes>();
@@ -65,9 +66,15 @@ namespace AndroidDbApp
             return stringToReturn;
         }
 
-        public string getDbPath()
+        public string getDbPath() => _dbPath;
+
+        public void DeleteTable()
         {
-            return dbPath;
+            var db = new SQLiteConnection(_dbPath);
+
+            db.DropTable<Notes>();
+
+            db.CreateTable<Notes>();
         }
     }
 }
