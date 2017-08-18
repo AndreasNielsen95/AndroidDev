@@ -47,6 +47,7 @@ namespace AndroidDbApp
             //this sets up to reuse exisiting row if one is available
             View view = convertView;
 
+
             if (view == null)
             {
                 view = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleExpandableListItem1, null);
